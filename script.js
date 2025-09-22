@@ -27,7 +27,7 @@ function sendEmail(email, otp){
 }
 
 let otp = Math.floor(100000 + Math.random() * 900000);
-console.log(otp);
+
 
 btn.addEventListener("click",()=>{
     console.log("Button clicked");
