@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="logo">Spend Wise</h1>
+        <div class="page">
+            <h1>Create an account</h1>
+            <div class="form">
+            <input type="email" id="email" placeholder="Email address">
+            <p>Already have an account? <a href="#login">Log in</a></p>
+            <p id="errorMsg"></p>
+            <button type="button" id="btn">Send OTP</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init({
+        publicKey: "4uaNDInVuuj3n9uYz", // from EmailJS Dashboard
+        });
+    })();
+    </script>
+
+</body>
+</html>
