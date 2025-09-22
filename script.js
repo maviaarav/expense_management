@@ -38,16 +38,17 @@ btn.addEventListener("click",()=>{
     else if(!hardcodeEmail.test(email.value)){
         errorMsg.innerText = "Please enter a valid email";
         errorMsg.setAttribute("style", "color: red; margin-top:10px;");
-        btn.remove();
+        
     }
     else{
         errorMsg.innerText = "Email is valid";
+        btn.remove();
         errorMsg.setAttribute("style", "color: green; margin-top:10px;");
+        verifyOTP();
     }
     emails = email.value;
     sendEmail(emails, otp);
   
-    verifyOTP();
 });
 
 function verifyOTP(){
